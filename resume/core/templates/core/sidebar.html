@@ -1,0 +1,15 @@
+{% load static %}
+<div class="col-sm-2 bg-dark text-white">
+    <div class="bar text-center">
+        <img src="{% static 'core/images/DisplayImage.jpg'%}" alt="Profile Pic" width="100px" height="100px"
+            class="img-fluid rounded-circle mt-5 ">
+        <h3 class="my-4 st-font">Nikhil Jaiswal</h3>
+        <hr class="border-light">
+        <nav class="nav flex-column ">
+            <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+            <a href="{% url 'services' %}" class="nav-link {{services}}">Service</a>
+            <a href="{% url 'skill' %}" class="nav-link  {{skill}}">Skill</a>
+            <a href="{% url 'contact' %}" class="nav-link {{contact}}">Conatct</a>
+        </nav>
+    </div>
+</div>

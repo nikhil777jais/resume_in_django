@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <h1 class="border-bottom text-warning head">Contact</h1>
+  <p class="text-center mt-3">Feel free to contact me if you have any query. I will try to come out with solution. </p>
+  <div class="row mt-5 bdr">
+    <div class="col-md-9">
+      <form action="">
+        <div class="row">
+          <div class="form-group col-md-6 ">
+            <label for="i-name">Name*</label>
+            <input type="text" id="i-name" class="form-control">
+          </div>
+          <div class="form-group col-md-6 ">
+            <label for="i-email">Email*</label>
+            <input type="text" id="i-email" class="form-control" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 ">
+            <label for="i-sub">Sunject</label>
+            <input type="text" id="i-sub" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 ">
+            <label for="i-comm">Query</label>
+            <textarea name="comment" id="i-comm" cols="30" rows="3" class="form-control" required ></textarea>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-12">
+            <button class="btn btn-info px-4">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3 text-center details">
+      <ul>
+        <li class="mb-5">
+          <i class="fas fa-map-marker-alt i-con"></i>
+          <p>Sitapur,Uttar Pradesh, India</p>
+        </li>
+        <li class="mb-5">
+          <i class="fas fa-phone i-con"></i>
+          <p>+91 7599900770</p>
+        </li>
+        <li class="mb-5">
+          <i class="fas fa-envelope i-con"></i>
+          <p>nikhil777jais@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row text-center mt-5 footer">
+    <div class="col-md-12 mt-4">
+       <a href="https://www.instagram.com/nikkkkhil._/?hl=en"><i class="fab fa-instagram mx-3 i-link"></i></a>
+       <a href="https://www.facebook.com/nikhil.jaiswal.1042/"><i class="fab fa-facebook mx-3 i-link"></i></a>
+       <a href="https://www.linkedin.com/in/nikhil-jaiswal-4a247a193/"><i class="fab fa-linkedin mx-3 i-link"></i></a>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center">
+	<img src="{% static 'core/images/head.jpg' %}" alt="display"
+	width="200px" class="img-thumbnail mt-5 b">
+</div>
+<div class="text-justify mt-4">
+	<h2 class ="st-font">Hello,</h2>
+	<div class="px-4" style="line-height:1.8rem">
+		<p style="text-indent:100px">
+		I am <b class="text-warning">Nikhil Jaiswal</b>, pursuing my B.Tech in Computer Science and Engineering from Shri Ram Murti Smarak College of Engineering and Technology, Bareilly which come under <b class="text-warning">Abdul Kalam Technical University, Lucknow</b>.
+		</p>
+	<p>I have done projects al college level based on Web development. I also served as a Web developer at <b class="text-warning">XYZ Technology</b>, one of the biggest digital marketing and web development firm. In this position,  I have led web developments for client in diverse industries including technology,  manufecture, hospitality, retail and financial services.
+</p>
+	<p>You can reach out to my Gihub profile by folowing link: <a href="https://github.com/nikhil777jais">click here</a></p>
+</div>
+<div class="text-center mt-4">
+	<a href="{% url 'contact' %}" class="btn btn-outline-warning mx-3 my-3 ">Hire me</a>
+	<a href="{% url 'contact' %}" class="btn btn-outline-info mx-3 my-3">contact me</a>
+</div>
+
+{% endblock content %}
